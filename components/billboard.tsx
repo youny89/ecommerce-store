@@ -5,6 +5,7 @@ interface BillboardProps {
 }
 
 const Billboard: React.FC<BillboardProps> = ({data}) => {
+
     return (
         <div className="p-4 sm:p-6 lg:p-6 rounded-xl overflow-hidden">
             <div
@@ -13,7 +14,7 @@ const Billboard: React.FC<BillboardProps> = ({data}) => {
 
                 <div className="h-full w-full flex flex-col justify-center items-center text-center gapy-y-8">
                     <div className="font-bold text-3xl sm:text-5xl log:text-6xl sm:max-w-xl max-w-xs">
-                        {data.label}
+                        {data?.label}
                     </div>
 
                 </div>
